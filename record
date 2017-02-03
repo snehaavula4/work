@@ -16,7 +16,7 @@ def injestCsv(file,posts):
             data[h] = line[h]
         # Insert the data into the collection
         posts.insert_one(data)
-
+#enter file names as input
 fileinput = "t1.csv"
 
 
@@ -24,7 +24,7 @@ fileinput = "t1.csv"
 if __name__ == "__main__":
     print("Hello world!")
 
-    #injestCsv("/Users/boY/Desktop/Code Me/Python/sneha_mongodb/dataInjestion/temp.csv", "")
+   
 
     client = MongoClient()
 
@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     # Accessing the collection
     collection = db['csv-collection']
-    #post={"student":"sandeep","subject":"Information Retrieval","Score":"Whatevs","date":datetime.datetime.utcnow()}
+    #post={"student":"sneha","subject":"Information Retrieval","Score":"Whatevs","date":datetime.datetime.utcnow()}
 
     # accessing the posts object
     posts = db.posts
